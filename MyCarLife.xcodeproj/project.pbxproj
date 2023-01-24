@@ -11,6 +11,15 @@
 		0190BAD1297FAB6200611F53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190BAD0297FAB6200611F53 /* ContentView.swift */; };
 		0190BAD3297FAB6300611F53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0190BAD2297FAB6300611F53 /* Assets.xcassets */; };
 		0190BAD6297FAB6300611F53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0190BAD5297FAB6300611F53 /* Preview Assets.xcassets */; };
+		0190BADF297FABFA00611F53 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190BADE297FABFA00611F53 /* LoginView.swift */; };
+		0190BAE1297FB5A300611F53 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190BAE0297FB5A300611F53 /* SignUpView.swift */; };
+		0190BAE3297FC2BF00611F53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0190BAE2297FC2BF00611F53 /* GoogleService-Info.plist */; };
+		0190BAE6297FC5FA00611F53 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0190BAE5297FC5FA00611F53 /* FirebaseAnalytics */; };
+		0190BAE8297FC5FA00611F53 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0190BAE7297FC5FA00611F53 /* FirebaseAuth */; };
+		0190BAEA297FC5FA00611F53 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 0190BAE9297FC5FA00611F53 /* FirebaseDatabase */; };
+		0190BAEC297FC5FA00611F53 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0190BAEB297FC5FA00611F53 /* FirebaseFirestore */; };
+		0190BAEE297FD6E600611F53 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190BAED297FD6E600611F53 /* AuthManager.swift */; };
+		0190BAF0297FE8CA00611F53 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190BAEF297FE8CA00611F53 /* PasswordResetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,11 @@
 		0190BAD0297FAB6200611F53 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0190BAD2297FAB6300611F53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0190BAD5297FAB6300611F53 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0190BADE297FABFA00611F53 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0190BAE0297FB5A300611F53 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		0190BAE2297FC2BF00611F53 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0190BAED297FD6E600611F53 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		0190BAEF297FE8CA00611F53 /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +40,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0190BAEA297FC5FA00611F53 /* FirebaseDatabase in Frameworks */,
+				0190BAEC297FC5FA00611F53 /* FirebaseFirestore in Frameworks */,
+				0190BAE6297FC5FA00611F53 /* FirebaseAnalytics in Frameworks */,
+				0190BAE8297FC5FA00611F53 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +69,12 @@
 		0190BACD297FAB6200611F53 /* MyCarLife */ = {
 			isa = PBXGroup;
 			children = (
+				0190BADC297FAB7000611F53 /* View */,
+				0190BADD297FAB7900611F53 /* Model */,
 				0190BACE297FAB6200611F53 /* MyCarLifeApp.swift */,
-				0190BAD0297FAB6200611F53 /* ContentView.swift */,
 				0190BAD2297FAB6300611F53 /* Assets.xcassets */,
 				0190BAD4297FAB6300611F53 /* Preview Content */,
+				0190BAED297FD6E600611F53 /* AuthManager.swift */,
 			);
 			path = MyCarLife;
 			sourceTree = "<group>";
@@ -62,9 +82,28 @@
 		0190BAD4297FAB6300611F53 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				0190BAE2297FC2BF00611F53 /* GoogleService-Info.plist */,
 				0190BAD5297FAB6300611F53 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0190BADC297FAB7000611F53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0190BAD0297FAB6200611F53 /* ContentView.swift */,
+				0190BADE297FABFA00611F53 /* LoginView.swift */,
+				0190BAE0297FB5A300611F53 /* SignUpView.swift */,
+				0190BAEF297FE8CA00611F53 /* PasswordResetView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0190BADD297FAB7900611F53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +122,12 @@
 			dependencies = (
 			);
 			name = MyCarLife;
+			packageProductDependencies = (
+				0190BAE5297FC5FA00611F53 /* FirebaseAnalytics */,
+				0190BAE7297FC5FA00611F53 /* FirebaseAuth */,
+				0190BAE9297FC5FA00611F53 /* FirebaseDatabase */,
+				0190BAEB297FC5FA00611F53 /* FirebaseFirestore */,
+			);
 			productName = MyCarLife;
 			productReference = 0190BACB297FAB6200611F53 /* MyCarLife.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +156,9 @@
 				Base,
 			);
 			mainGroup = 0190BAC2297FAB6200611F53;
+			packageReferences = (
+				0190BAE4297FC5FA00611F53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 0190BACC297FAB6200611F53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +175,7 @@
 			files = (
 				0190BAD6297FAB6300611F53 /* Preview Assets.xcassets in Resources */,
 				0190BAD3297FAB6300611F53 /* Assets.xcassets in Resources */,
+				0190BAE3297FC2BF00611F53 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0190BAE1297FB5A300611F53 /* SignUpView.swift in Sources */,
+				0190BADF297FABFA00611F53 /* LoginView.swift in Sources */,
 				0190BAD1297FAB6200611F53 /* ContentView.swift in Sources */,
+				0190BAF0297FE8CA00611F53 /* PasswordResetView.swift in Sources */,
 				0190BACF297FAB6200611F53 /* MyCarLifeApp.swift in Sources */,
+				0190BAEE297FD6E600611F53 /* AuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +326,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,8 +354,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +390,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0190BAE4297FC5FA00611F53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0190BAE5297FC5FA00611F53 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0190BAE4297FC5FA00611F53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		0190BAE7297FC5FA00611F53 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0190BAE4297FC5FA00611F53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		0190BAE9297FC5FA00611F53 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0190BAE4297FC5FA00611F53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		0190BAEB297FC5FA00611F53 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0190BAE4297FC5FA00611F53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0190BAC3297FAB6200611F53 /* Project object */;
 }
